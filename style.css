@@ -4,7 +4,6 @@
   --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
 }
 
-
 body {
   font-size: 1.2rem;
   font-family: 'Work Sans', sans-serif;
@@ -472,7 +471,7 @@ footer li {
   }
 
   .simply-countdown > .simply-section {
-    padding: 25px;
+    padding: 30px;
     margin: 3px;
   }
 
