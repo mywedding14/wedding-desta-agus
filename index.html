@@ -29,7 +29,15 @@
   <section id="hero"
     class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
     <main>
-      <h4>Kepada <span>Bapak/Ibu/Saudara/i, </span></h4>
+      <!-- <h4>Kepada <span>Bapak/Ibu/Saudara/i, </span></h4> -->
+
+      <!-- HTML -->
+<div class="guest-name">
+    <p>Kepada Yth:</p>
+    <h4 id="namaTamu">Tamu Undangan</h4>
+</div>
+
+
       <h1>Desta & Agus</h1>
       <p>Akan melangsungkan Akad dan Resepsi pernikahan dalam:</p>
       <div class="simply-countdown"></div>
@@ -429,6 +437,19 @@
     crossorigin="anonymous"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+
+  <script>
+    // JavaScript
+window.onload = function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const nama = urlParams.get('to'); // Mengambil data 'to'
+    
+    if (nama) {
+        document.getElementById('namaTamu').innerText = decodeURIComponent(nama);
+    }
+};
+
+  </script>
 
   <script>
     simplyCountdown('.simply-countdown', {
