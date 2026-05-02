@@ -79,6 +79,18 @@ body {
   text-transform: uppercase;
 }
 
+/* CSS */
+.guest-name {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+}
+.guest-name h2 {
+    color: #fff; /* Warna emas */
+    font-size: 2em;
+}
+
+
 .home {
   background-image: url(img/bg.png);
   background-size: cover;
